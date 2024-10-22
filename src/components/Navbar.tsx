@@ -8,8 +8,8 @@ const Navbar = () => {
   const { cart } = useCart();
 
   return (
-    <nav className="bg-background border-b">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="bg-background border-b ">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
             <Link to="/" className="flex-shrink-0 flex items-center">
@@ -28,9 +28,9 @@ const Navbar = () => {
             <ThemeToggle />
             <Link to="/checkout">
               <Button variant="ghost" size="icon" className="ml-4 relative">
-                <ShoppingCart className="h-5 w-5" />
+                <ShoppingCart className="absolute h-[1.2rem] w-[1.2rem]" color='white' />
                 {cart.length > 0 && (
-                  <span className="absolute top-0 right-0 -mt-1 -mr-1 bg-red-500 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center">
+                  <span className="absolute top-0 right-0 -mt-1 -mr-1 bg-red-500 text-white rounded-full text-[9px] w-3 h-3 flex items-center justify-center">
                     {cart.length}
                   </span>
                 )}

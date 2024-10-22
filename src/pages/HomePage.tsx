@@ -4,7 +4,7 @@ import { Button } from '../components/ui/button';
 const HomePage = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-background to-secondary/10 px-4 sm:px-6 lg:px-8 py-12 text-center">
-      <div className="max-w-7xl w-full space-y-8">
+      <div className="w-full space-y-8 ">
         <h1 className="text-4xl font-extrabold tracking-tight text-primary sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
           Welcome to MyStore
         </h1>
